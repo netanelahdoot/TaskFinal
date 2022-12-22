@@ -78,7 +78,6 @@ namespace course
         {
             getAllWorkers().ForEach(w => getShiftsOfWorker(w).ForEach(s =>
             {
-                string s1 = "";
                 if (s.End.Year == 0)
                 {
                     Console.WriteLine("Worker: " + w.Name + " Start: " + s.Start + "End: Worker Is Still Currently Working On It" +"\n");
