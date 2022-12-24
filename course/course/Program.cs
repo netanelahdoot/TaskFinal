@@ -504,12 +504,16 @@ namespace course
                         {
                             Console.Clear();
                             book.printAllOrdersByStatus();
+                            Console.WriteLine("<Press Enter to Continue>");
+                            Console.ReadLine();
                         }
                         break;
                     case 7:
                         {
                             Console.Clear();
                             book.printProductThatAreInTrouble();
+                            Console.WriteLine("<Press Enter to Continue>");
+                            Console.ReadLine();
                             //book.printProducts(book.areInTrouble());
                         }
                         break;
