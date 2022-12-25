@@ -659,10 +659,10 @@ namespace course
             string value = "";
             string id = "";
             Console.WriteLine("Please Enter Your Id");
-            Costumer costumer = store.findCostumerByID(id);
+            Costumer costumer = store.findCostumerByID(id=Console.ReadLine());
 
 
-            Console.WriteLine("Please Enter All The Names Of The Products You Want To Buy, Please Press 1 To Buy"+ "/n");
+            Console.WriteLine("Please Enter All The Names Of The Products You Want To Buy, Please Press 1 To Buy"+ "\n");
             Console.WriteLine("These Are All The Products In The Store"+ "\n");
             book.printProductsHere();
             while (!((value = (Console.ReadLine())).Equals("1")) && !value.Equals("9"))
