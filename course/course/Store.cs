@@ -58,16 +58,16 @@ namespace course
         }
         public Worker findWorkerByID(string id)
         {
-            return (Worker)allWorkers.Where(w => w.Id.Equals(id));
+            return allWorkers.Where(w => w.Id.Equals(id)).FirstOrDefault();
         }
         public Costumer findCostumerByID(string id)
         {
-            return (Costumer)allWorkers.Where(c => c.Id.Equals(id));
+            return costumers.Where(c => c.Id.Equals(id)).FirstOrDefault();
         }
 
         public CashRegister findCashRegistersByID(string id)
         {
-            return (CashRegister)registers.Where(r => r.Index.Equals(id));
+            return registers.Where(r => r.Index.Equals(id)).FirstOrDefault();
         }
         public void printIsolatedClients()
         {
