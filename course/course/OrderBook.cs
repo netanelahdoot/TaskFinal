@@ -170,7 +170,7 @@ namespace course
         }
         public Product findProductName(string name)
         {
-            return (Product)products.Where(p => p.Name.Equals(name));
+             return products.Where(p => p.Name.Equals(name)).FirstOrDefault();
         }
         public void printOrdersId()
         {
